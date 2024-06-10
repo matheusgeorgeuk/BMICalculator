@@ -1,4 +1,4 @@
-# Calculadora IMC
+# BMI Calculator
 Desc
 
 ## :camera_flash: Screenshots
