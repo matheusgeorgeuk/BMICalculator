@@ -29,8 +29,12 @@ class MainActivity : AppCompatActivity() {
         val weightStr: String = edtWeight.text.toString()
         val heightStr: String = edtHeight.text.toString()
 
+ validate_empty_field
         if(weightStr == "" || heightStr == ""){
         //Show message to user
+
+        println("Button action" + result)
+ master
 
             Snackbar
                 .make(
