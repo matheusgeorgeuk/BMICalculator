@@ -1,5 +1,6 @@
 package com.comunidadedevspace.imc
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -11,12 +12,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Retrieve the components EditText
-        // Create a variable and associate (=) the UI<EditText> component
-        // Recover the screen button
-
-        // Put action on the button setOnClickListener
-        // Recover the text typed in edtWeight
 
         val edtWeight = findViewById<TextInputEditText>(R.id.edt_weight)
         val edtHeight = findViewById<TextInputEditText>(R.id.edt_height)
@@ -29,12 +24,8 @@ class MainActivity : AppCompatActivity() {
         val weightStr: String = edtWeight.text.toString()
         val heightStr: String = edtHeight.text.toString()
 
- validate_empty_field
-        if(weightStr == "" || heightStr == ""){
-        //Show message to user
 
-        println("Button action" + result)
- master
+        if(weightStr == "" || heightStr == ""){
 
             Snackbar
                 .make(
@@ -48,6 +39,10 @@ class MainActivity : AppCompatActivity() {
 
             val heightQ2 = height * height
             val result = weight / heightQ2
+
+            val intent = Intent(this, ResultActivity::class.java)
+            intent.putExtra(KEY_RESULT_BMI, result)
+            startActivity(intent)
 
 
             println("Button action" + result)
