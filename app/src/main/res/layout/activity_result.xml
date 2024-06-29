@@ -72,4 +72,5 @@
         android:layout_height="wrap_content"
         android:textStyle="bold"
         tools:text="NORMAL" />
+
 </LinearLayout>

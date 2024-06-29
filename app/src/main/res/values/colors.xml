@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     
     <color name="primary_400">#cd00ea</color>
     <color name="pimary_900">#5c00d2</color>
+    
+    <color name="underweight">#FFA500</color> <!-- Bright orange -->
+    <color name="normal">#00FF00</color> <!-- Green -->
+    <color name="overweight">#FA4616</color> <!-- Reddish orange -->
+    <color name="obesity">#FF0000</color> <!-- Red -->
+    <color name="severe_obesity">#AB2328</color> <!-- Dark red -->
+
 </resources>
