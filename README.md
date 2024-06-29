@@ -3,7 +3,7 @@ This project is a native Android application developed using the Kotlin programm
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
-<img src="https://github.com/matheusgeorgeuk/BMICalculator/assets/172172835/25dc1c85-b2b0-4d72-ad77-347c2d81cfd8" width=260/> <img src="https://github.com/matheusgeorgeuk/BMICalculator/assets/172172835/5c729ba2-a6a8-47cd-902c-5cf87bf0976e" width=260/>
+<img src="https://github.com/matheusgeorgeuk/BMICalculator/assets/172172835/25dc1c85-b2b0-4d72-ad77-347c2d81cfd8" width=260/> <img src="https://github.com/matheusgeorgeuk/BMICalculator/assets/172172835/b57edc5f-c5e5-4d44-a59c-5aea1df94d6c" width=260/>
 
 
 
