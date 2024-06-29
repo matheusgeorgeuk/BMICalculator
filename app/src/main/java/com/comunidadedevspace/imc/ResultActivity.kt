@@ -22,7 +22,7 @@ class ResultActivity : AppCompatActivity() {
         val tvClassification = findViewById<TextView>(R.id.tv_classification)
         tvResult.text = result.toString()
 
-        var (classification: String , color: Int) = when {
+        val (classification: String , color: Int) = when {
             result <= 18.5f -> {
                 "UNDERWEIGHT" to R.color.underweight
             }
@@ -47,7 +47,5 @@ class ResultActivity : AppCompatActivity() {
         tvClassification.setTextColor(ContextCompat.getColor(this, color))
 
         tvClassification.text = classification
-
-
     }
 }

@@ -15,15 +15,12 @@ class MainActivity : AppCompatActivity() {
 
         val edtWeight = findViewById<TextInputEditText>(R.id.edt_weight)
         val edtHeight = findViewById<TextInputEditText>(R.id.edt_height)
-
         val btnCalculate = findViewById<Button>(R.id.btn_calculate)
-
 
         btnCalculate.setOnClickListener {
 
         val weightStr: String = edtWeight.text.toString()
         val heightStr: String = edtHeight.text.toString()
-
 
         if(weightStr == "" || heightStr == ""){
 
@@ -43,9 +40,6 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, ResultActivity::class.java)
             intent.putExtra(KEY_RESULT_BMI, result)
             startActivity(intent)
-
-
-            println("Button action" + result)
         }
         }
     }
