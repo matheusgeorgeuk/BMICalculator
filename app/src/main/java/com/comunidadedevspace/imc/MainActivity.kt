@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
                     "Fill in all the fields",
                     Snackbar.LENGTH_LONG
                 ).show()
-        }else{
+        } else {
             val weight = weightStr.toFloat()
             val height = heightStr.toFloat()
 
