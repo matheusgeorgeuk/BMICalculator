@@ -81,6 +81,6 @@
         android:layout_marginTop="16sp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        tools:text="Estar abaixo do peso ideal pode ser mais perigoso à saúde do que a obesidade, independentemente de outros fatores de risco. Segundo pesquisas, o risco de morte é 80% maior em pessoas com baixo peso em comparação com aquelas com peso adequado. Além disso, desnutrição, ossos fracos e sistema imunológico reduzido são algumas consequências de estar abaixo do peso." />
+        tools:text="Eat a healthy diet and exercise regularly." />
 
 </LinearLayout>

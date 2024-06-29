@@ -73,5 +73,6 @@ class ResultActivity : AppCompatActivity() {
         }
 
         tvDescription.text = description
+
     }
 }
