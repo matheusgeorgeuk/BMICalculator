@@ -18,17 +18,17 @@
         
         <ImageView
             android:src="@drawable/ic_weight"
-            android:layout_marginStart="24dp"
+            android:layout_gravity="center"
             android:layout_marginBottom="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+            android:layout_marginTop="32dp"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
             app:tint="@color/white" />
 
         <TextView
             android:text="BMI Calculator"
             android:textSize="24sp"
-            android:layout_marginStart="24dp"
+            android:layout_gravity="center"
             android:textStyle="bold"
             android:textColor="@color/white"
             android:layout_width="wrap_content"
@@ -36,9 +36,8 @@
 
         <TextView
             android:text="Fill in all the fields to calculate your BMI:"
-            android:layout_marginStart="24dp"
+            android:layout_gravity="center"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="24dp"
             android:layout_marginBottom="48dp"
             android:textColor="@color/white"
             android:layout_width="wrap_content"

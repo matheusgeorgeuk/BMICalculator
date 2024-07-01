@@ -17,9 +17,9 @@
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="24dp"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
             android:layout_marginTop="64dp"
             android:layout_marginBottom="16dp"
             android:src="@drawable/ic_weight"
@@ -28,7 +28,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
+            android:layout_gravity="center"
             android:text="BMI Calculator"
             android:textColor="@color/white"
             android:textSize="24sp"
@@ -37,9 +37,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
+            android:layout_gravity="center"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="24dp"
             android:text="Confirm your result and classification below:"
             android:textColor="@color/white" />
 
@@ -61,6 +60,7 @@
     <TextView
         android:id="@+id/tv_classification_label"
         android:layout_width="wrap_content"
+        android:gravity="center"
         android:layout_marginTop="48dp"
         android:layout_height="wrap_content"
         android:text="The classification of your BMI is:" />
@@ -68,6 +68,7 @@
     <TextView
         android:id="@+id/tv_classification"
         android:textSize="24sp"
+        android:gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
@@ -79,8 +80,11 @@
         android:layout_height="wrap_content"
         android:textStyle="italic"
         android:layout_marginTop="16sp"
-        android:layout_marginStart="16dp"
+        android:gravity="center"
         android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
         tools:text="Eat a healthy diet and exercise regularly." />
+
+
 
 </LinearLayout>
