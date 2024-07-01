@@ -1,6 +1,8 @@
 package com.comunidadedevspace.imc
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -17,6 +19,8 @@ class ResultActivity : AppCompatActivity() {
         setContentView(R.layout.activity_result)
 
         val result = intent.getFloatExtra(KEY_RESULT_BMI, 0f)
+
+        val imgBack = findViewById<ImageView>(R.id.ic_back)
 
         val tvResult = findViewById<TextView>(R.id.tv_result)
         val tvClassification = findViewById<TextView>(R.id.tv_classification)
@@ -52,27 +56,31 @@ class ResultActivity : AppCompatActivity() {
 
         val description: String = when {
             result <= 18.5f -> {
-                "Being below the ideal weight can be more dangerous to health than obesity, regardless of other risk factors. According to research, the risk of death is 80% higher in underweight individuals compared to those with a healthy weight. Additionally, malnutrition, weak bones, and a compromised immune system are some of the consequences of being underweight."
+                "Being underweight can pose greater health risks than obesity, irrespective of other risk factors. Research indicates that the mortality risk is 80% higher in underweight individuals compared to those with a healthy weight. Furthermore, consequences of being underweight include malnutrition, weakened bones, and a compromised immune system."
             }
 
             result > 18.5f && result <= 24.9f -> {
-                "Being at the ideal weight brings several benefits to health and well-being. Additionally, maintaining this weight is essential for preventing diseases and ensuring a healthier life. Keep a healthy diet and exercise regularly to stay at the appropriate weight."
+                "Maintaining an ideal weight offers numerous health benefits and contributes to overall well-being. Furthermore, it plays a crucial role in disease prevention and promotes a healthier lifestyle. To achieve and sustain this weight, prioritize a nutritious diet and engage in regular exercise."
             }
 
             result > 25f && result <= 29.9f -> {
-                "Being overweight, according to the Body Mass Index (BMI), poses significant health risks. In addition to affecting quality of life, excess weight is associated with several serious conditions, such as cardiovascular diseases, diabetes, and respiratory problems, among other comorbidities."
+                "Excess weight, as determined by the Body Mass Index (BMI), carries substantial health risks. Beyond its impact on quality of life, being overweight is linked to several serious conditions, including cardiovascular diseases, diabetes, and respiratory issues, among other comorbidities."
             }
 
             result > 30f && result <= 39.9f -> {
-                "Obesity poses various health risks. In addition to impacting quality of life, being overweight is associated with several serious conditions, such as cardiovascular diseases, diabetes, respiratory problems, and psychological changes (depression, anxiety, low self-esteem, etc)."
+                "Obesity presents a range of health risks. Beyond its impact on quality of life, being overweight is linked to several serious conditions, including cardiovascular diseases, diabetes, respiratory issues, and psychological changes (such as depression, anxiety, and low self-esteem)."
             }
 
             else -> {
-                "Severe obesity poses various health risks. In addition to impacting quality of life, being overweight is associated with several serious conditions, such as cardiovascular diseases, diabetes, respiratory problems, and psychological changes (depression, anxiety, low self-esteem, etc). Furthermore, severe obesity carries a high surgical risk."
+                "Severe obesity is associated with a spectrum of health risks. Beyond its impact on quality of life, being overweight is linked to several serious conditions, including cardiovascular diseases, diabetes, respiratory issues, and psychological changes (such as depression, anxiety, and low self-esteem). Furthermore, severe obesity significantly increases the surgical risk."
             }
         }
 
         tvDescription.text = description
 
+        imgBack.setOnClickListener {
+         val back = Intent(this, MainActivity::class.java)
+            startActivity(back)
+        }
     }
 }
