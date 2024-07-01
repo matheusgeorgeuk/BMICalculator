@@ -3,11 +3,11 @@ This project is a native Android application developed using the Kotlin programm
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
-<img src="https://github.com/matheusgeorgeuk/BMICalculator/assets/172172835/25dc1c85-b2b0-4d72-ad77-347c2d81cfd8" width=260/> <img src="https://github.com/matheusgeorgeuk/BMICalculator/assets/172172835/b57edc5f-c5e5-4d44-a59c-5aea1df94d6c" width=260/>
+<img src="https://github.com/matheusgeorgeuk/BMICalculator/assets/172172835/8f8ec119-bb95-4ca3-b7c6-544883406c02" width=260/> <img src="https://github.com/matheusgeorgeuk/BMICalculator/assets/172172835/b2a09ba6-bb13-47ac-be65-4869d0e31104" width=260/> <img src="https://github.com/matheusgeorgeuk/BMICalculator/assets/172172835/15901052-bac4-44a0-9da7-6dec805da219" width=260/>
 
 
 
-## Technologies
+## Knowledge Stack
 - Activity
 - Intent
 - Snackbar
