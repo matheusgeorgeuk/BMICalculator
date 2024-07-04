@@ -20,7 +20,7 @@
             android:id="@+id/ic_back"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:src="@drawable/ic_back"
+            android:src="@drawable/ic_arrow_back"
             android:layout_marginTop="48dp"
             android:layout_marginStart="24dp" />
 
